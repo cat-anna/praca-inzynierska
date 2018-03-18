@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5B007333-2016-4892-A6A8-14F65E849029}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>gui</RootNamespace>
+    <ProjectName>VisApp</ProjectName>
+    <SccProjectName>Svn</SccProjectName>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)\..\core\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OutDir);$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)$(PlatformArchitecture)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)\..\core\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OutDir);$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)$(PlatformArchitecture)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)\..\core\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OutDir);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)\..\core\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OutDir);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <AdditionalDependencies>core$(PlatformArchitecture)d.lib;GDI32.lib;OpenGL32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <AdditionalDependencies>core$(PlatformArchitecture)d.lib;GDI32.lib;OpenGL32.lib;kernel32.lib;user32.lib;gdi32.lib;core$(PlatformArchitecture)d.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <AdditionalDependencies>core$(PlatformArchitecture).lib;GDI32.lib;OpenGL32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;core$(PlatformArchitecture).lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <AdditionalDependencies>core$(PlatformArchitecture).lib;GDI32.lib;OpenGL32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;core$(PlatformArchitecture).lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Run\core32.dll" />
+    <None Include="..\Run\CubeSlicer32.dll" />
+    <None Include="..\Run\D2Mapper32.dll" />
+    <None Include="..\Run\FreeImage.dll" />
+    <None Include="..\Run\glew32.dll" />
+    <None Include="..\Run\glew32d.dll" />
+    <None Include="..\Run\TextImport32.dll" />
+    <None Include="..\Run\VisApp32.exe" />
+    <None Include="..\VisApp\bin\FreeImage.dll" />
+    <None Include="..\VisApp\bin\glew32.dll" />
+    <None Include="..\VisApp\bin\glew64.dll" />
+    <None Include="..\VisApp\VisAppPluginTemplate.zip" />
+    <None Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutWindow.cpp" />
+    <ClCompile Include="AddNewLayersWizard.cpp" />
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="CoreMgt.cpp" />
+    <ClCompile Include="CoreWaitForm.cpp" />
+    <ClCompile Include="CreateProjectWizard.cpp" />
+    <ClCompile Include="DataInspector.cpp" />
+    <ClCompile Include="gui.cpp" />
+    <ClCompile Include="GUISettings.cpp" />
+    <ClCompile Include="Helpers.cpp" />
+    <ClCompile Include="ImportData.cpp" />
+    <ClCompile Include="ImportDataItem.cpp" />
+    <ClCompile Include="InputBox.cpp" />
+    <ClCompile Include="MainForm.cpp" />
+    <ClCompile Include="ManagementWindow.cpp" />
+    <ClCompile Include="OGLContext.cpp" />
+    <ClCompile Include="ProjectMgt.cpp" />
+    <ClCompile Include="SelectLayerTypesWindow.cpp" />
+    <ClCompile Include="SettingsWindow.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\VisApp\include\Config.h" />
+    <ClInclude Include="..\VisApp\include\FreeImage.h" />
+    <ClInclude Include="..\VisApp\include\Interface\Camera.h" />
+    <ClInclude Include="..\VisApp\include\Interface\DataChannel.h" />
+    <ClInclude Include="..\VisApp\include\Interface\DataSeries.h" />
+    <ClInclude Include="..\VisApp\include\Interface\DataStore.h" />
+    <ClInclude Include="..\VisApp\include\Interface\Interface.h" />
+    <ClInclude Include="..\VisApp\include\Interface\Manager.h" />
+    <ClInclude Include="..\VisApp\include\Interface\ProjectMgt.h" />
+    <ClInclude Include="..\VisApp\include\Interface\Project.h" />
+    <ClInclude Include="..\VisApp\include\Interface\Resource.h" />
+    <ClInclude Include="..\VisApp\include\Interface\Settings.h" />
+    <ClInclude Include="..\VisApp\include\Interface\VisAppGuiOperations.h" />
+    <ClInclude Include="..\VisApp\include\Interface\Visualizer.h" />
+    <ClInclude Include="..\VisApp\include\Log.h" />
+    <ClInclude Include="..\VisApp\include\Plugins\ImportPlugin.h" />
+    <ClInclude Include="..\VisApp\include\Plugins\LayerPlugin.h" />
+    <ClInclude Include="..\VisApp\include\Plugins\LayerPluginDescriptor.h" />
+    <ClInclude Include="..\VisApp\include\Plugins\nPlugins.h" />
+    <ClInclude Include="..\VisApp\include\Plugins\PluginBase.h" />
+    <ClInclude Include="..\VisApp\include\Plugins\PluginDescriptor.h" />
+    <ClInclude Include="..\VisApp\include\Plugins\PluginExec.h" />
+    <ClInclude Include="..\VisApp\include\Plugins\PluginInterface.h" />
+    <ClInclude Include="..\VisApp\include\Plugins\PluginManager.h" />
+    <ClInclude Include="..\VisApp\include\Plugins\ProcessPlugin.h" />
+    <ClInclude Include="..\VisApp\include\Plugins\RunnablePluginDesciptor.h" />
+    <ClInclude Include="..\VisApp\include\PugiXML.h" />
+    <ClInclude Include="..\VisApp\include\Renderer\Texture.h" />
+    <ClInclude Include="..\VisApp\include\Renderer\GraphicDevice.h" />
+    <ClInclude Include="..\VisApp\include\Renderer\InternalLayer.h" />
+    <ClInclude Include="..\VisApp\include\Renderer\LayerInterface.h" />
+    <ClInclude Include="..\VisApp\include\Renderer\Renderer.h" />
+    <ClInclude Include="..\VisApp\include\Renderer\Shader.h" />
+    <ClInclude Include="..\VisApp\include\Renderer\ShaderManager.h" />
+    <ClInclude Include="..\VisApp\include\Renderer\VAO.h" />
+    <ClInclude Include="..\VisApp\include\Tools\ActionQueue.h" />
+    <ClInclude Include="..\VisApp\include\Tools\DataFormatter.h" />
+    <ClInclude Include="..\VisApp\include\Types\DataTypes.h" />
+    <ClInclude Include="..\VisApp\include\Types\Types.h" />
+    <ClInclude Include="..\VisApp\include\VisApp.h" />
+    <ClInclude Include="..\VisApp\include\VisAppMath.h" />
+    <ClInclude Include="..\VisApp\include\VisAppOS.h" />
+    <ClInclude Include="..\VisApp\include\VisAppWindows.h" />
+    <ClInclude Include="..\VisApp\include\Worker\Commands.h" />
+    <ClInclude Include="..\VisApp\include\Worker\Executable.h" />
+    <ClInclude Include="..\VisApp\include\Worker\Instance.h" />
+    <ClInclude Include="..\VisApp\include\Worker\Interface.h" />
+    <ClInclude Include="..\VisApp\include\Worker\Manager.h" />
+    <ClInclude Include="..\VisApp\include\Worker\MessagePipe.h" />
+    <ClInclude Include="..\VisApp\include\Worker\Requirement.h" />
+    <ClInclude Include="..\VisApp\include\Worker\RequirementList.h" />
+    <ClInclude Include="..\VisApp\include\Worker\Worker.h" />
+    <ClInclude Include="AboutWindow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddNewLayersWizard.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CoreManip.h" />
+    <ClInclude Include="CoreMessages.h" />
+    <ClInclude Include="CoreWaitForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CoreMgt.h" />
+    <ClInclude Include="CreateProjectWizard.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="DataInspector.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GUISettings.h" />
+    <ClInclude Include="Helpers.h" />
+    <ClInclude Include="ImportData.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ImportDataItem.h" />
+    <ClInclude Include="InputBox.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MainForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ManagementWindow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OGLContext.h" />
+    <ClInclude Include="ProjectMgt.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SelectLayerTypesWindow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SettingsWindow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutWindow.resx">
+      <DependentUpon>AboutWindow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewLayersWizard.resx">
+      <DependentUpon>AddNewLayersWizard.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoreWaitForm.resx">
+      <DependentUpon>CoreWaitForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateProjectWizard.resx">
+      <DependentUpon>CreateProjectWizard.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataInspector.resx">
+      <DependentUpon>DataInspector.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportData.resx">
+      <DependentUpon>ImportData.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resX">
+      <DependentUpon>MainForm.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementWindow.resx">
+      <DependentUpon>ManagementWindow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectMgt.resx">
+      <DependentUpon>ProjectMgt.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectLayerTypesWindow.resx">
+      <DependentUpon>SelectLayerTypesWindow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsWindow.resx">
+      <DependentUpon>SettingsWindow.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\VisApp\lib\FreeImage.lib" />
+    <Library Include="..\VisApp\lib\glew32.lib" />
+    <Library Include="..\VisApp\lib\glew64.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Run\freeimage-license.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Run\AppSettings.xml" />
+    <Xml Include="..\Run\CoreSettings.xml" />
+    <Xml Include="..\Run\PluginConfig.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="app.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

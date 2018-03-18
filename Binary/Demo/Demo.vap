@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<Project>
+	<Settings>
+		<Name>Demo</Name>
+	</Settings>
+	<DataStore>
+		<Series>
+			<Item>
+				<RUID>0d090d0b0001</RUID>
+				<Name>Seria 0</Name>
+				<Size X="100" Y="100" Z="100" />
+				<State>4</State>
+				<Channels>
+					<Item>
+						<RUID>04000a000002</RUID>
+						<ChannelName>id ziarna</ChannelName>
+						<Type Dimiension="1" Type="1" />
+						<RangeValues>
+							<MinLocation X="0" Y="36" Z="49" />
+							<MinValues X="0" />
+							<MaxLocation X="0" Y="45" Z="16" />
+							<MaxValues X="49" />
+							<VectorMin X="0" />
+							<VectorMax X="49" />
+						</RangeValues>
+					</Item>
+				</Channels>
+			</Item>
+			<Item>
+				<RUID>07050c080003</RUID>
+				<Name>Seria 1</Name>
+				<Size X="300" Y="300" Z="1" />
+				<State>4</State>
+				<Channels>
+					<Item>
+						<RUID>010d02040004</RUID>
+						<ChannelName>id ziarna</ChannelName>
+						<Type Dimiension="1" Type="1" />
+						<RangeValues>
+							<MinLocation X="276" Y="102" Z="0" />
+							<MinValues X="-169" />
+							<MaxLocation X="0" Y="159" Z="0" />
+							<MaxValues X="56" />
+							<VectorMin X="-169" />
+							<VectorMax X="56" />
+						</RangeValues>
+					</Item>
+				</Channels>
+			</Item>
+			<Item>
+				<RUID>050608050005</RUID>
+				<Name>Seria 2</Name>
+				<Size X="300" Y="300" Z="1" />
+				<State>4</State>
+				<Channels>
+					<Item>
+						<RUID>020f0b0f0006</RUID>
+						<ChannelName>id ziarna</ChannelName>
+						<Type Dimiension="1" Type="1" />
+						<RangeValues>
+							<MinLocation X="136" Y="77" Z="0" />
+							<MinValues X="1" />
+							<MaxLocation X="0" Y="150" Z="0" />
+							<MaxValues X="56" />
+							<VectorMin X="1" />
+							<VectorMax X="56" />
+						</RangeValues>
+					</Item>
+				</Channels>
+			</Item>
+		</Series>
+		<Layers>
+			<Item LayerClass="InternalLayerClass">
+				<Texture>
+					<ColorLayout IntVal="3539002" />
+					<ElementType IntVal="6094899" />
+					<Size W="0" H="0" />
+				</Texture>
+				<Buffers>
+					<VertexTable Count="6069" />
+					<TextureMappings Count="0" />
+					<ElementIndex Count="11668" />
+					<MeshData Count="5834" />
+				</Buffers>
+				<RUID>09030e040007</RUID>
+				<Name>Brak nazwy</Name>
+				<Size X="299" Y="300" Z="0" />
+				<BaseColor R="1" G="1" B="1" />
+				<Sources>
+					<Source Project="090d0e000000" Series="07050c080003" Channel="010d02040004" />
+				</Sources>
+				<Type IntVal="1" />
+			</Item>
+			<Item LayerClass="D2TexturedDynamicPlane">
+				<RUID>020805040008</RUID>
+				<Name>Brak nazwy0</Name>
+				<Size X="300" Y="300" Z="0" />
+				<BaseColor R="1" G="1" B="1" />
+				<Sources>
+					<Source Project="090d0e000000" Series="07050c080003" Channel="010d02040004" />
+				</Sources>
+				<Type IntVal="1" />
+				<PlaneSize>
+					<PlaneWidth>300</PlaneWidth>
+					<PlaneHeight>300</PlaneHeight>
+					<TexWidth>300</TexWidth>
+					<TexHeight>300</TexHeight>
+				</PlaneSize>
+				<Config>
+					<OutputMode>0</OutputMode>
+					<InputMode>0</InputMode>
+					<InvertColor>false</InvertColor>
+				</Config>
+			</Item>
+			<Item LayerClass="InternalLayerClass">
+				<Texture>
+					<ColorLayout IntVal="3539002" />
+					<ElementType IntVal="6094899" />
+					<Size W="0" H="0" />
+				</Texture>
+				<Buffers>
+					<VertexTable Count="3412" />
+					<TextureMappings Count="0" />
+					<ElementIndex Count="6698" />
+					<MeshData Count="3349" />
+				</Buffers>
+				<RUID>09030e040009</RUID>
+				<Name>Brak nazwy1</Name>
+				<Size X="299" Y="300" Z="0" />
+				<BaseColor R="1" G="1" B="1" />
+				<Sources>
+					<Source Project="090d0e000000" Series="050608050005" Channel="020f0b0f0006" />
+				</Sources>
+				<Type IntVal="1" />
+			</Item>
+			<Item LayerClass="D2TexturedDynamicPlane">
+				<RUID>02080504000a</RUID>
+				<Name>Brak nazwy2</Name>
+				<Size X="300" Y="300" Z="0" />
+				<BaseColor R="1" G="1" B="1" />
+				<Sources>
+					<Source Project="090d0e000000" Series="050608050005" Channel="020f0b0f0006" />
+				</Sources>
+				<Type IntVal="1" />
+				<PlaneSize>
+					<PlaneWidth>300</PlaneWidth>
+					<PlaneHeight>300</PlaneHeight>
+					<TexWidth>300</TexWidth>
+					<TexHeight>300</TexHeight>
+				</PlaneSize>
+				<Config>
+					<OutputMode>0</OutputMode>
+					<InputMode>0</InputMode>
+					<InvertColor>false</InvertColor>
+				</Config>
+			</Item>
+			<Item LayerClass="D3TexturedDynamicCube">
+				<RUID>030d0f0b000b</RUID>
+				<Name>cube</Name>
+				<Size X="0" Y="0" Z="0" />
+				<BaseColor R="1" G="1" B="1" />
+				<Sources>
+					<Source Project="090d0e000000" Series="0d090d0b0001" Channel="04000a000002" />
+				</Sources>
+				<Type IntVal="2" />
+				<CubeSize X="100" Y="100" Z="100" />
+				<Config>
+					<RenderCubeEdges>true</RenderCubeEdges>
+					<RenderInternalEdges>true</RenderInternalEdges>
+					<Mode>0</Mode>
+				</Config>
+			</Item>
+		</Layers>
+		<Data>
+			<Memory Size="4000000">
+				<Name>04000a000002_Data</Name>
+				<Users>
+					<RUID>04000a000002</RUID>
+				</Users>
+			</Memory>
+			<Memory Size="360000">
+				<Name>010d02040004_Data</Name>
+				<Users>
+					<RUID>010d02040004</RUID>
+				</Users>
+			</Memory>
+			<Memory Size="93344">
+				<Name>09030e040007_MeshData</Name>
+				<Users>
+					<RUID>09030e040007</RUID>
+				</Users>
+			</Memory>
+			<Memory Size="360000">
+				<Name>020f0b0f0006_Data</Name>
+				<Users>
+					<RUID>020f0b0f0006</RUID>
+				</Users>
+			</Memory>
+			<Memory Size="46672">
+				<Name>09030e040007_ElementIndex</Name>
+				<Users>
+					<RUID>09030e040007</RUID>
+				</Users>
+			</Memory>
+			<Memory Size="40944">
+				<Name>09030e040009_VertexTable</Name>
+				<Users>
+					<RUID>09030e040009</RUID>
+				</Users>
+			</Memory>
+			<Memory Size="72828">
+				<Name>09030e040007_VertexTable</Name>
+				<Users>
+					<RUID>09030e040007</RUID>
+				</Users>
+			</Memory>
+			<Memory Size="270000">
+				<Name>020805040008_PlaneTexture</Name>
+				<Users>
+					<RUID>020805040008</RUID>
+				</Users>
+			</Memory>
+			<Memory Size="26792">
+				<Name>09030e040009_ElementIndex</Name>
+				<Users>
+					<RUID>09030e040009</RUID>
+				</Users>
+			</Memory>
+			<Memory Size="53584">
+				<Name>09030e040009_MeshData</Name>
+				<Users>
+					<RUID>09030e040009</RUID>
+				</Users>
+			</Memory>
+			<Memory Size="270000">
+				<Name>02080504000a_PlaneTexture</Name>
+				<Users>
+					<RUID>02080504000a</RUID>
+				</Users>
+			</Memory>
+			<Memory Size="3000000">
+				<Name>030d0f0b000b_CubeMap</Name>
+				<Users>
+					<RUID>030d0f0b000b</RUID>
+				</Users>
+			</Memory>
+		</Data>
+	</DataStore>
+</Project>

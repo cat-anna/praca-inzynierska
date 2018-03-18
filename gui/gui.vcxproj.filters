@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="headers">
+      <UniqueIdentifier>{adbf8b9c-c148-4659-97db-96f4ffbfd107}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\Interface">
+      <UniqueIdentifier>{5c49b578-7c34-4e31-b152-f2be7b317c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\Types">
+      <UniqueIdentifier>{2d7cba9f-9569-4637-8a3d-c67212b03b8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\Renderer">
+      <UniqueIdentifier>{0a0a631c-0a7f-4a95-8694-62f2417a96a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\Tools">
+      <UniqueIdentifier>{15512dfd-76d8-4afc-9c10-74bdfa85086b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\Plugins">
+      <UniqueIdentifier>{0751ba4d-e36e-4fae-8e7b-464346f6ba34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\WindowSrc">
+      <UniqueIdentifier>{65632b0b-41c6-44ee-97f6-b6e0a08470ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\Worker">
+      <UniqueIdentifier>{db272ec9-932b-4786-a3c6-917d0fc84d42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deploy">
+      <UniqueIdentifier>{7af47619-f73f-4b10-bbc0-ff6f75566b77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deploy\Run">
+      <UniqueIdentifier>{50f7e907-8f26-4ee5-87c2-2b34b91374e8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VisApp\VisAppPluginTemplate.zip">
+      <Filter>deploy</Filter>
+    </None>
+    <None Include="..\VisApp\bin\glew32.dll">
+      <Filter>deploy</Filter>
+    </None>
+    <None Include="..\VisApp\bin\glew64.dll">
+      <Filter>deploy</Filter>
+    </None>
+    <None Include="..\Run\core32.dll">
+      <Filter>deploy\Run</Filter>
+    </None>
+    <None Include="..\Run\CubeSlicer32.dll">
+      <Filter>deploy\Run</Filter>
+    </None>
+    <None Include="..\Run\D2Mapper32.dll">
+      <Filter>deploy\Run</Filter>
+    </None>
+    <None Include="..\Run\FreeImage.dll">
+      <Filter>deploy\Run</Filter>
+    </None>
+    <None Include="..\Run\glew32.dll">
+      <Filter>deploy\Run</Filter>
+    </None>
+    <None Include="..\Run\glew32d.dll">
+      <Filter>deploy\Run</Filter>
+    </None>
+    <None Include="..\Run\TextImport32.dll">
+      <Filter>deploy\Run</Filter>
+    </None>
+    <None Include="..\Run\VisApp32.exe">
+      <Filter>deploy\Run</Filter>
+    </None>
+    <None Include="..\VisApp\bin\FreeImage.dll">
+      <Filter>deploy</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Helpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreMgt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportDataItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AddNewLayersWizard.cpp">
+      <Filter>Windows\WindowSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportData.cpp">
+      <Filter>Windows\WindowSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagementWindow.cpp">
+      <Filter>Windows\WindowSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="MainForm.cpp">
+      <Filter>Windows\WindowSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="InputBox.cpp">
+      <Filter>Windows\WindowSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateProjectWizard.cpp">
+      <Filter>Windows\WindowSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreWaitForm.cpp">
+      <Filter>Windows\WindowSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectLayerTypesWindow.cpp">
+      <Filter>Windows\WindowSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectMgt.cpp">
+      <Filter>Windows\WindowSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingsWindow.cpp">
+      <Filter>Windows\WindowSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="DataInspector.cpp">
+      <Filter>Windows\WindowSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="GUISettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutWindow.cpp">
+      <Filter>Windows\WindowSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainForm.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddNewLayersWizard.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLContext.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreWaitForm.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreMgt.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectLayerTypesWindow.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportData.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportDataItem.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Config.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\PugiXML.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\VisApp.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\VisAppMath.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Types\DataTypes.h">
+      <Filter>headers\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Types\Types.h">
+      <Filter>headers\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Interface\DataChannel.h">
+      <Filter>headers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Interface\DataSeries.h">
+      <Filter>headers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Interface\DataStore.h">
+      <Filter>headers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Interface\Interface.h">
+      <Filter>headers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Interface\Manager.h">
+      <Filter>headers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Interface\Project.h">
+      <Filter>headers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Interface\Visualizer.h">
+      <Filter>headers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Interface\ProjectMgt.h">
+      <Filter>headers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\VisAppWindows.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\VisAppOS.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ManagementWindow.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Renderer\Renderer.h">
+      <Filter>headers\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Renderer\InternalLayer.h">
+      <Filter>headers\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Renderer\LayerInterface.h">
+      <Filter>headers\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Tools\ActionQueue.h">
+      <Filter>headers\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Interface\Resource.h">
+      <Filter>headers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Log.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateProjectWizard.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Renderer\Shader.h">
+      <Filter>headers\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Renderer\ShaderManager.h">
+      <Filter>headers\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Renderer\GraphicDevice.h">
+      <Filter>headers\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Interface\Camera.h">
+      <Filter>headers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="InputBox.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Plugins\ImportPlugin.h">
+      <Filter>headers\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Plugins\nPlugins.h">
+      <Filter>headers\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Plugins\PluginBase.h">
+      <Filter>headers\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Plugins\PluginDescriptor.h">
+      <Filter>headers\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Plugins\PluginExec.h">
+      <Filter>headers\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Plugins\PluginInterface.h">
+      <Filter>headers\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Plugins\PluginManager.h">
+      <Filter>headers\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Plugins\ProcessPlugin.h">
+      <Filter>headers\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectMgt.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Interface\Settings.h">
+      <Filter>headers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingsWindow.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Interface\VisAppGuiOperations.h">
+      <Filter>headers\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\FreeImage.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Plugins\LayerPlugin.h">
+      <Filter>headers\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Plugins\LayerPluginDescriptor.h">
+      <Filter>headers\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Plugins\RunnablePluginDesciptor.h">
+      <Filter>headers\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Renderer\VAO.h">
+      <Filter>headers\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Renderer\Texture.h">
+      <Filter>headers\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreMessages.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataInspector.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Tools\DataFormatter.h">
+      <Filter>headers\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="GUISettings.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Worker\Commands.h">
+      <Filter>headers\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Worker\Executable.h">
+      <Filter>headers\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Worker\Instance.h">
+      <Filter>headers\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Worker\Interface.h">
+      <Filter>headers\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Worker\Manager.h">
+      <Filter>headers\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Worker\MessagePipe.h">
+      <Filter>headers\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Worker\Requirement.h">
+      <Filter>headers\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Worker\RequirementList.h">
+      <Filter>headers\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VisApp\include\Worker\Worker.h">
+      <Filter>headers\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutWindow.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreManip.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainForm.resX">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewLayersWizard.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoreWaitForm.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectLayerTypesWindow.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportData.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementWindow.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateProjectWizard.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsWindow.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataInspector.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutWindow.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectMgt.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\VisApp\lib\FreeImage.lib">
+      <Filter>deploy</Filter>
+    </Library>
+    <Library Include="..\VisApp\lib\glew32.lib">
+      <Filter>deploy</Filter>
+    </Library>
+    <Library Include="..\VisApp\lib\glew64.lib">
+      <Filter>deploy</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Run\freeimage-license.txt">
+      <Filter>deploy\Run</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Run\AppSettings.xml">
+      <Filter>deploy\Run</Filter>
+    </Xml>
+    <Xml Include="..\Run\CoreSettings.xml">
+      <Filter>deploy\Run</Filter>
+    </Xml>
+    <Xml Include="..\Run\PluginConfig.xml">
+      <Filter>deploy\Run</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="DLLSource">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Src\Renderer">
+      <UniqueIdentifier>{63af7107-28a9-4043-994c-ed5ae9a8c755}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Impl">
+      <UniqueIdentifier>{09766af1-0c15-4548-9528-e072797dd4cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Types">
+      <UniqueIdentifier>{a38ed392-a631-4d21-8757-cb326cac8b2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Project">
+      <UniqueIdentifier>{f7b970f7-fe9d-425d-b501-3b366cf6b7b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Plugins">
+      <UniqueIdentifier>{318c9a85-4c73-45cf-8512-fc2e8e6b1b3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Worker">
+      <UniqueIdentifier>{38e11570-8a5e-4a12-b62d-f30266098c2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\MemMgt">
+      <UniqueIdentifier>{49ba7b15-b858-429b-9cf4-8a8454ccdaaf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>DLLSource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Config.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer\Renderer.h">
+      <Filter>Src\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer\RenderDevice.h">
+      <Filter>Src\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer\VirtualCamera.h">
+      <Filter>Src\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer\nRenderer.h">
+      <Filter>Src\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Impl\CoreManager.h">
+      <Filter>Src\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Implementation.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Types\FacadeHolder.h">
+      <Filter>Src\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Types\Types.h">
+      <Filter>Src\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Types\SynchronizedQueue.h">
+      <Filter>Src\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Impl\Facedes.h">
+      <Filter>Src\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Project\Project.h">
+      <Filter>Src\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Project\DataChannel.h">
+      <Filter>Src\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Project\DataSeries.h">
+      <Filter>Src\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Project\DataStore.h">
+      <Filter>Src\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer\LayerClassList.h">
+      <Filter>Src\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer\LayerInterfaceImpl.h">
+      <Filter>Src\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Plugins\LibHandle.h">
+      <Filter>Src\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Plugins\PluginManagerImpl.h">
+      <Filter>Src\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Plugins\nPlugins.h">
+      <Filter>Src\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Project\FileHeaders.h">
+      <Filter>Src\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer\InternalLayerFragmentShader.h">
+      <Filter>Src\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer\InternalLayerVertexShader.h">
+      <Filter>Src\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Worker\BoostIPCPipe.h">
+      <Filter>Src\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Worker\Implementation.h">
+      <Filter>Src\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Worker\InternalWorker.h">
+      <Filter>Src\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Worker\ManagerImpl.h">
+      <Filter>Src\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Worker\MessageQueue.h">
+      <Filter>Src\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Worker\ProcessInstance.h">
+      <Filter>Src\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Worker\ProcessTracker.h">
+      <Filter>Src\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Worker\ProcessWorker.h">
+      <Filter>Src\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Project\Memory.h">
+      <Filter>Src\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Project\MemoryMgt.h">
+      <Filter>Src\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MemMgt\MemHdr.h">
+      <Filter>Src\MemMgt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MemMgt\MemMgt.h">
+      <Filter>Src\MemMgt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MemMgt\MemMgtImpl.h">
+      <Filter>Src\MemMgt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MemMgt\MemObject.h">
+      <Filter>Src\MemMgt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MemMgt\MemObjectImpl.h">
+      <Filter>Src\MemMgt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MemMgt\MemPointer.h">
+      <Filter>Src\MemMgt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MemMgt\MemProcess.h">
+      <Filter>Src\MemMgt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MemMgt\MemProcessImpl.h">
+      <Filter>Src\MemMgt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MemMgt\nMemMgt.h">
+      <Filter>Src\MemMgt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MemMgt\ShMem.h">
+      <Filter>Src\MemMgt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MemMgt\ShMemoryBase.h">
+      <Filter>Src\MemMgt</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MemMgt\ShTab.h">
+      <Filter>Src\MemMgt</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>DLLSource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer\Renderer.cpp">
+      <Filter>Src\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer\Shader.cpp">
+      <Filter>Src\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer\VirtualCamera.cpp">
+      <Filter>Src\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>DLLSource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer\ShaderManager.cpp">
+      <Filter>Src\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer\RenderDevice.cpp">
+      <Filter>Src\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Impl\CoreManager.cpp">
+      <Filter>Src\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Impl\Interface.cpp">
+      <Filter>Src\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Project\Project.cpp">
+      <Filter>Src\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Project\DataChannel.cpp">
+      <Filter>Src\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Project\DataSeries.cpp">
+      <Filter>Src\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Project\DataStore.cpp">
+      <Filter>Src\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Project\ProjectMgt.cpp">
+      <Filter>Src\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer\LayerInterface.cpp">
+      <Filter>Src\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer\LayerClassList.cpp">
+      <Filter>Src\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer\InternalLayer.cpp">
+      <Filter>Src\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer\LayerInterfaceImpl.cpp">
+      <Filter>Src\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Plugins\ImportPlugin.cpp">
+      <Filter>Src\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Plugins\LibHandle.cpp">
+      <Filter>Src\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Plugins\PluginBase.cpp">
+      <Filter>Src\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Plugins\PluginDescriptor.cpp">
+      <Filter>Src\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Plugins\PluginExec.cpp">
+      <Filter>Src\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Plugins\PluginInterface.cpp">
+      <Filter>Src\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Plugins\PluginManagerImpl.cpp">
+      <Filter>Src\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Plugins\ProcessPlugin.cpp">
+      <Filter>Src\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Log.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer\GraphicDevice.cpp">
+      <Filter>Src\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Impl\Settings.cpp">
+      <Filter>Src\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Plugins\RunnablePluginDescriptor.cpp">
+      <Filter>Src\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Plugins\LayerPluginDescriptor.cpp">
+      <Filter>Src\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Worker\BoostIPCPipe.cpp">
+      <Filter>Src\Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Worker\Commands.cpp">
+      <Filter>Src\Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Worker\Executable.cpp">
+      <Filter>Src\Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Worker\Instance.cpp">
+      <Filter>Src\Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Worker\InternalWorker.cpp">
+      <Filter>Src\Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Worker\ManagerImpl.cpp">
+      <Filter>Src\Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Worker\MessageQueue.cpp">
+      <Filter>Src\Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Worker\ProcessInstance.cpp">
+      <Filter>Src\Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Worker\ProcessTracker.cpp">
+      <Filter>Src\Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Worker\ProcessWorker.cpp">
+      <Filter>Src\Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Worker\Requirement.cpp">
+      <Filter>Src\Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Worker\RequirementList.cpp">
+      <Filter>Src\Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Worker\Worker.cpp">
+      <Filter>Src\Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Project\Memory.cpp">
+      <Filter>Src\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Project\MemoryMgt.cpp">
+      <Filter>Src\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemMgt\MemMgt.cpp">
+      <Filter>Src\MemMgt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemMgt\MemMgtImpl.cpp">
+      <Filter>Src\MemMgt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemMgt\MemObject.cpp">
+      <Filter>Src\MemMgt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemMgt\MemObjectImpl.cpp">
+      <Filter>Src\MemMgt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemMgt\MemPointer.cpp">
+      <Filter>Src\MemMgt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemMgt\MemProcess.cpp">
+      <Filter>Src\MemMgt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemMgt\MemProcessImpl.cpp">
+      <Filter>Src\MemMgt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer\iCamera.cpp">
+      <Filter>Src\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Impl\Resource.cpp">
+      <Filter>Src\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Impl\DataPointer.cpp">
+      <Filter>Src\Impl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Renderer\InternalLayerFragmentShader.glsl">
+      <Filter>Src\Renderer</Filter>
+    </None>
+    <None Include="src\Renderer\InternalLayerVertexShader.glsl">
+      <Filter>Src\Renderer</Filter>
+    </None>
+    <None Include="src\Renderer\glsl2c.bat">
+      <Filter>Src\Renderer</Filter>
+    </None>
+  </ItemGroup>
+</Project>

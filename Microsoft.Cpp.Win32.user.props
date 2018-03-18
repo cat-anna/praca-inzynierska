@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>D:\Programowanie\LibsMSVC;$(SolutionDir);$(IncludePath);$(ProjectDir)</IncludePath>
+    <LibraryPath>$(SolutionDir)\;$(SolutionDir)\Bin\$(Configuration)\$(Platform)\;D:\Programowanie\LibsMSVC\;D:\Programowanie\LibsMSVC\boost\lib32-msvc-11.0;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)$(PlatformArchitecture)</TargetName>
+    <OutDir>$(SolutionDir)\Bin\$(Configuration)\$(Platform)\</OutDir>
+    <_PropertySheetDisplayName>Microsoft.Cpp.Win32.user</_PropertySheetDisplayName>
+    <IntDir>$(SolutionDir)\Bin\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <ExecutablePath>$(SolutionDir)\Bin\$(Configuration)\$(Platform)\$(ProjectName);$(VCInstallDir)bin;$(WindowsSDK_ExecutablePath_x86);$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>BUILD_PLATFORM="$(Platform)";BUILD_CONFIGURATION="$(Configuration)";BUILD_ARCH="$(PlatformTarget)";BUILD_$(Configuration)=1;BUILDING_PROJECT="$(ProjectName)";BUILD_$(PlatformTarget)=1;BUILDING_$(ProjectName);BUILD_BITS=$(PlatformArchitecture);WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>-Zm256 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>if not "$(TargetExt)"==".lib"  ( copy $(TargetPath) $(SolutionDir)\Run\$(TargetFileName) )</Command>
+    </PostBuildEvent>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

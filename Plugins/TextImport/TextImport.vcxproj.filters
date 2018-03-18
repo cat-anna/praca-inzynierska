@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="DllSrc">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="PluginSrc">
+      <UniqueIdentifier>{3f64ad96-4cfc-4402-bff4-cf6bde6f6b5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Stdafx.h">
+      <Filter>DllSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="TextImport.h">
+      <Filter>PluginSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportTextFileForm.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="FileReader.h">
+      <Filter>PluginSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportTable.h">
+      <Filter>PluginSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="VariableDescriptor.h">
+      <Filter>PluginSrc</Filter>
+    </ClInclude>
+    <ClInclude Include="CLIGuiHandler.h">
+      <Filter>PluginSrc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>DllSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="TextImport.cpp">
+      <Filter>PluginSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin.cpp">
+      <Filter>PluginSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportTextFileForm.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="FileReader.cpp">
+      <Filter>PluginSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportTable.cpp">
+      <Filter>PluginSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="VariableDescriptor.cpp">
+      <Filter>PluginSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="CLIGuiHandler.cpp">
+      <Filter>PluginSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>DllSrc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImportTextFileForm.resx" />
+  </ItemGroup>
+</Project>

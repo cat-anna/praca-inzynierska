@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ApplicationSettings>
+	<Settings>
+		<DataInspector>
+			<Use>true</Use>
+			<ShowDelay>500</ShowDelay>
+		</DataInspector>
+	</Settings>
+</ApplicationSettings>

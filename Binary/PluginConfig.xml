@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<PluginConfig>
+	<Interface Name="TextImport">
+		<Plugin Name="Text file importer">
+			<Patterns>
+				<Item Name="id ziarna only">
+					<Variable>
+						<Name>Współrzędne</Name>
+						<Settings FirstValueID="0" DoImport="false" IsCoords="true" />
+						<Type Dimiension="3" Type="1" />
+					</Variable>
+					<Variable>
+						<Name>id ziarna</Name>
+						<Settings FirstValueID="3" DoImport="true" />
+						<Type Dimiension="1" Type="1" />
+					</Variable>
+				</Item>
+				<Item Name="1000x1000x1">
+					<Variable>
+						<Name>Współrzędne</Name>
+						<Settings FirstValueID="0" DoImport="false" IsCoords="true" />
+						<Type Dimiension="3" Type="1" />
+					</Variable>
+					<Variable>
+						<Name>d3_1</Name>
+						<Settings FirstValueID="3" DoImport="true" />
+						<Type Dimiension="3" Type="2" />
+					</Variable>
+					<Variable>
+						<Name>center</Name>
+						<Settings FirstValueID="6" DoImport="true" />
+						<Type Dimiension="1" Type="2" />
+					</Variable>
+					<Variable>
+						<Name>d3_2</Name>
+						<Settings FirstValueID="7" DoImport="true" />
+						<Type Dimiension="3" Type="2" />
+					</Variable>
+				</Item>
+			</Patterns>
+		</Plugin>
+	</Interface>
+</PluginConfig>

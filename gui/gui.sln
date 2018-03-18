@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gui", "gui.vcxproj", "{A3906FF1-7BDD-4DB4-A04A-4271F978EB10}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5B007333-2016-4892-A6A8-14F65E849029} = {5B007333-2016-4892-A6A8-14F65E849029}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "core", "..\core\core.vcxproj", "{5B007333-2016-4892-A6A8-14F65E849029}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F713B5FA-098A-4AC0-92CF-53389634AD72} = {F713B5FA-098A-4AC0-92CF-53389634AD72}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WorkerClient", "..\WorkerClient\WorkerClient.vcxproj", "{132D84D6-8EF7-4FA3-BD13-B99B0086E66F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F713B5FA-098A-4AC0-92CF-53389634AD72} = {F713B5FA-098A-4AC0-92CF-53389634AD72}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PugiXML", "..\PugiXML\PugiXML.vcxproj", "{F713B5FA-098A-4AC0-92CF-53389634AD72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{DBF52704-D49A-4A63-8F8B-BFE0FBEE7B73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workers", "Workers", "{EA28082C-92B8-4FBA-8D42-EAEC9478C2B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3906FF1-7BDD-4DB4-A04A-4271F978EB10}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A3906FF1-7BDD-4DB4-A04A-4271F978EB10}.Debug|Win32.Build.0 = Debug|Win32
+		{A3906FF1-7BDD-4DB4-A04A-4271F978EB10}.Release|Win32.ActiveCfg = Release|Win32
+		{A3906FF1-7BDD-4DB4-A04A-4271F978EB10}.Release|Win32.Build.0 = Release|Win32
+		{5B007333-2016-4892-A6A8-14F65E849029}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5B007333-2016-4892-A6A8-14F65E849029}.Debug|Win32.Build.0 = Debug|Win32
+		{5B007333-2016-4892-A6A8-14F65E849029}.Release|Win32.ActiveCfg = Release|Win32
+		{5B007333-2016-4892-A6A8-14F65E849029}.Release|Win32.Build.0 = Release|Win32
+		{132D84D6-8EF7-4FA3-BD13-B99B0086E66F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{132D84D6-8EF7-4FA3-BD13-B99B0086E66F}.Debug|Win32.Build.0 = Debug|Win32
+		{132D84D6-8EF7-4FA3-BD13-B99B0086E66F}.Release|Win32.ActiveCfg = Release|Win32
+		{132D84D6-8EF7-4FA3-BD13-B99B0086E66F}.Release|Win32.Build.0 = Release|Win32
+		{F713B5FA-098A-4AC0-92CF-53389634AD72}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F713B5FA-098A-4AC0-92CF-53389634AD72}.Debug|Win32.Build.0 = Debug|Win32
+		{F713B5FA-098A-4AC0-92CF-53389634AD72}.Release|Win32.ActiveCfg = Release|Win32
+		{F713B5FA-098A-4AC0-92CF-53389634AD72}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F713B5FA-098A-4AC0-92CF-53389634AD72} = {DBF52704-D49A-4A63-8F8B-BFE0FBEE7B73}
+		{132D84D6-8EF7-4FA3-BD13-B99B0086E66F} = {DBF52704-D49A-4A63-8F8B-BFE0FBEE7B73}
+	EndGlobalSection
+EndGlobal
